@@ -1,0 +1,11 @@
+dataset_name: bandit_code_analysis
+version: 1.0
+date: 2026-09-14
+target: bot.py (telegram-бот)
+tool: Bandit 1.9.4
+python_version: 3.13.7
+lines_scanned: 703
+total_findings: 3
+severity_breakdown: Low=3, Medium=0, High=0
+scan_scope: собственный исходный код проекта
+expert: Яушева Алина
