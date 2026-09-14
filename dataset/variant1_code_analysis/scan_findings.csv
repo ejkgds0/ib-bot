@@ -1,0 +1,4 @@
+finding_id,tool,target,line,severity,confidence,cwe,category,description,expert_comment
+1,Bandit,bot.py,20-21,Low,Medium,CWE-259,Hardcoded Credentials,"TOKEN и CLARIFAI_API_KEY хранятся как строковые константы в исходном коде","Вынести секреты в переменные окружения (.env), исключить .env из репозитория через .gitignore"
+2,Bandit,bot.py,335-338,Low,High,CWE-703,Improper Exception Handling,"Исключение перехватывается конструкцией except и подавляется оператором pass без логирования","Добавить логирование ошибки через модуль logging вместо молчаливого подавления"
+3,Bandit,bot.py,457-460,Low,High,CWE-703,Improper Exception Handling,"Аналогичная проблема в функции обработки фотографии: ошибка подавляется без записи в лог","Добавить логирование ошибки через модуль logging"
