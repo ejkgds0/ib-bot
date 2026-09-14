@@ -1,0 +1,9 @@
+finding_id,tool,target,port,severity,category,description,expert_comment
+1,Nmap,scanme.nmap.org,22,Info,Open Port,"Открыт SSH-порт, версия OpenSSH 6.6.1p1 (Ubuntu)","Убедиться, что используется актуальная версия OpenSSH в продакшн-системах"
+2,Nmap,scanme.nmap.org,80,Info,Open Port,"Открыт HTTP-порт, Apache httpd 2.4.7 (Ubuntu)","Обновить веб-сервер до актуальной версии"
+3,Nikto,scanme.nmap.org,80,Medium,Missing Security Header,"Отсутствует заголовок X-Frame-Options - уязвимость к clickjacking","Добавить заголовок X-Frame-Options: DENY или SAMEORIGIN"
+4,Nikto,scanme.nmap.org,80,Low,Missing Security Header,"Отсутствует заголовок X-Content-Type-Options - риск MIME-sniffing атак","Добавить заголовок X-Content-Type-Options: nosniff"
+5,Nikto,scanme.nmap.org,80,Medium,Misconfiguration,"Включён Apache mod_negotiation, упрощающий подбор имён файлов методом перебора","Отключить mod_negotiation или ограничить MultiViews"
+6,Nikto,scanme.nmap.org,80,High,Outdated Software,"Используется устаревшая версия Apache/2.4.7, актуальная версия минимум 2.4.54","Обновить Apache до последней стабильной версии"
+7,Masscan,45.33.32.156,22,Info,Open Port,"Быстрое сканирование подтвердило открытый SSH-порт, результат согласуется с данными Nmap","Ограничить доступ к SSH по IP-белому списку или отключить парольную аутентификацию в пользу ключей"
+8,Masscan,45.33.32.156,80,Info,Open Port,"Быстрое сканирование подтвердило открытый HTTP-порт, результат согласуется с данными Nmap","Настроить редирект с HTTP на HTTPS для шифрования трафика"

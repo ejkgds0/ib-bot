@@ -1,0 +1,10 @@
+dataset_name: network_infrastructure_scan
+version: 1.0
+date: 2026-09-14
+target: scanme.nmap.org (45.33.32.156) официальный легальный тестовый полигон Nmap
+tools_used: Nmap 7.95, Nikto 2.5.0, Masscan 1.3.2
+total_findings: 8
+severity_breakdown: Info=4, Low=1, Medium=2, High=1
+scan_scope: только разрешённая тестовая цель; инфраструктура GitHub.com получена через Meta API, но не сканировалась
+legal_note: сканирование реальной инфраструктуры GitHub не производилось во избежание нарушения условий использования сервиса; для практики использован официальный тестовый сервер scanme.nmap.org
+expert: Яушева Алина
